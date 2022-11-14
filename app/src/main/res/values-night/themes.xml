@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FreeChronomemter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:navigationBarColor">@color/Blue_obscure</item>
+        <item name="colorPrimaryDark">@color/Blue_obscure</item>
+
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/black_light</item>
+        <item name="colorControlNormal">@color/Gray_mod</item>
+        <item name="android:textColorPrimary">@color/Gray_mod</item>
+        <item name="background">@color/white_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/Gray_mod</item>
+    </style>
+</resources>

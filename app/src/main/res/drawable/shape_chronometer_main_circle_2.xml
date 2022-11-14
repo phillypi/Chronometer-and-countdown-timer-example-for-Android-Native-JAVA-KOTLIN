@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:thickness="10dp"
+    android:useLevel="true">
+    <gradient
+        android:id="@+id/gradient_progress_bar"
+        android:startColor="@color/white_light2"
+        android:centerColor="@color/blue_facebook"
+        android:useLevel="true"
+        android:endColor="@android:color/holo_blue_dark">
+    </gradient>
+
+</shape>
