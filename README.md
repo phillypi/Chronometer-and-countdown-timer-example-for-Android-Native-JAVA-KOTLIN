@@ -7,4 +7,10 @@ I am uploading this for free learning, I'll change a lot of things here and I do
   <img align="center" alt="ph" height="90" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
 </div>
 <br>
+
+
+
+
           
+TAGS:
+android, java, android studio, java android, android java, android studio tutorial, android tutorial, kotlin android, android chronometer, cronometro android
