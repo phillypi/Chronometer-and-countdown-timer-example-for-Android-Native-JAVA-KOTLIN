@@ -2,8 +2,8 @@ package br.com.freechronomemter;
 /*
 *  THIS HELPED YOU? Follow me!!! ->
 *
-*  DEVELOPED BY Phillypi Fernandes, in Brazil!!!
-*  Linkedin: https://www.linkedin.com/in/phillypi-vieira-469232121/
+*  DEVELOPED BY Phillypi Fernandes
+*  LinkedIn: https://www.linkedin.com/in/phillypi-vieira-469232121/
 *  GitHub: https://github.com/phillypi
 *  Facebook: https://www.facebook.com/Phillypi.F.Vieira
 *  Contact: fernandesphillypi323@gmail.com
