@@ -1,14 +1,14 @@
 package br.com.freechronomemter;
 /*
-*  THIS HELPED YOU? Follow me!!! ->
-*
-*  DEVELOPED BY Phillypi Fernandes
-*  LinkedIn: https://www.linkedin.com/in/phillypi-vieira-469232121/
-*  GitHub: https://github.com/phillypi
-*  Facebook: https://www.facebook.com/Phillypi.F.Vieira
-*  Contact: fernandesphillypi323@gmail.com
-*
-* */
+ *  THIS HELPED YOU? Follow me!!! ->
+ *
+ *  DEVELOPED BY Phillypi Fernandes
+ *  LinkedIn: https://www.linkedin.com/in/phillypi-vieira-469232121/
+ *  GitHub: https://github.com/phillypi
+ *  Facebook: https://www.facebook.com/Phillypi.F.Vieira
+ *  Contact: fernandesphillypi323@gmail.com
+ *
+ * */
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -35,15 +35,14 @@ import java.util.Objects;
 public class FreeChronometer extends AppCompatActivity implements NumberPicker.OnValueChangeListener {
     public static final String PAUSE_KEY = "pause";
     public static final String PLAY_KEY = "play";
+    public static final String TEXT_VIEW_INDICATOR_ALERT =
+            "Click here to define a countdown value";
+    public static final String CHOOSE_THE_TIME_TO_COUNT = "Choose the time to count";
     private static final String RESTART_PRESS_PLAY = "Restart? press play!";
     private static final String MESSAGE_TIMER_IS_OFF =
             "To use the timer, click on the left side buttom of Play/Pause buttom";
     private static final String MESSAGE_TIMER_IS_EMPTY =
             "No value to count, please, click and define a value to count";
-    public static final String TEXT_VIEW_INDICATOR_ALERT =
-            "Click here to define a countdown value";
-    public static final String CHOOSE_THE_TIME_TO_COUNT = "Choose the time to count";
-
     NumberPicker timerNumberPickerHour;
     NumberPicker timerNumberPickerMinute;
     NumberPicker timerNumberPickerSecond;
@@ -152,6 +151,7 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
                         clearAllFields();
                     }
                 }
+
                 @SuppressLint("SetTextI18n")
                 public void onFinish() {
                     cancel();
@@ -165,14 +165,14 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
         }
     }
 
-    private void setProgressOnTimer(long progress){
+    private void setProgressOnTimer(long progress) {
         progress = (getMilliseconds() - progress);
         progressBarTimer.setProgress((int) progress);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    private void setConfigOnProgressTimer(){
-        progressBarTimer.setMax((int)getMilliseconds()-20);
+    private void setConfigOnProgressTimer() {
+        progressBarTimer.setMax((int) getMilliseconds() - 20);
         progressBarTimer.setMin(0);
     }
 
@@ -249,6 +249,7 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
 
         numberPickerConfig();
     }
+
     @SuppressLint("ResourceAsColor")
     @RequiresApi(api = Build.VERSION_CODES.Q)
     private void numberPickerConfig() {
@@ -364,8 +365,7 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
 
         if (!isResume) {
             countDownTimerFunction();
-        }
-        else if (counterTimer != null) {///CHECAR ISSO, TA ESTRANHO SAPORRA
+        } else if (counterTimer != null) {///CHECAR ISSO, TA ESTRANHO SAPORRA
             counterTimer.onFinish();
         }
     }
@@ -403,7 +403,7 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
 
     private void resetButtonClick() {
         buttonReset.setOnClickListener(view -> {
-            if ((isTimerOn)&&(isResume)) {
+            if ((isTimerOn) && (isResume)) {
                 counterTimer.onFinish();
             }
             isResume = false;
@@ -413,7 +413,7 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
 
     @SuppressLint({"SetTextI18n", "UseCompatLoadingForDrawables"})
     private void clearAllFields() {
-        if(chronometer != null){
+        if (chronometer != null) {
             chronometer.stop();
             tMilliSec = 0L;
             tStart = 0L;
@@ -425,9 +425,9 @@ public class FreeChronometer extends AppCompatActivity implements NumberPicker.O
         buttonStart.setImageDrawable(getResources()
                 .getDrawable(R.drawable.ic_chronometer_main_play));
 
-        if(isTimerOn) {
+        if (isTimerOn) {
             chronometerMainTextViewIndicator.setText(TEXT_VIEW_INDICATOR_ALERT);
-        }else{
+        } else {
             chronometerMainTextViewIndicator.setVisibility(View.GONE);
         }
 
